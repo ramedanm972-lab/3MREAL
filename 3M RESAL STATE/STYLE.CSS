@@ -1,0 +1,243 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Tahoma,sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+header{
+    background:#0A2540;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+}
+
+.logo{
+    color:#D4AF37;
+    font-size:35px;
+    font-weight:bold;
+}
+
+nav{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+.menu{
+    position:relative;
+}
+
+.menu-btn{
+    background:none;
+    border:none;
+    color:white;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.submenu{
+    display:none;
+    position:absolute;
+    top:45px;
+    right:0;
+    width:220px;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.2);
+}
+
+.submenu a{
+    display:block;
+    padding:12px;
+    text-decoration:none;
+    color:#0A2540;
+}
+
+.submenu a:hover{
+    background:#D4AF37;
+    color:white;
+}
+
+.hero{
+    height:90vh;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.6),
+        rgba(0,0,0,.6)
+    ),
+    url("https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1500&q=80");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:60px;
+}
+
+.hero p{
+    font-size:24px;
+    margin-top:15px;
+}
+
+.main-btn{
+    margin-top:25px;
+    background:#D4AF37;
+    border:none;
+    padding:15px 30px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:18px;
+}
+/* قسم العقارات */
+
+.properties{
+    padding:80px 5%;
+    background:#f8fafc;
+}
+
+.section-title{
+    text-align:center;
+    font-size:40px;
+    color:#0A2540;
+    margin-bottom:50px;
+}
+
+/* حاوية الكروت */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+/* الكارت */
+
+.card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* الصورة */
+
+.card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+}
+
+/* المحتوى */
+
+.card-content{
+    padding:20px;
+}
+
+.card-content h3{
+    color:#0A2540;
+    font-size:24px;
+    margin-bottom:10px;
+}
+
+.location{
+    color:#666;
+    margin-bottom:10px;
+}
+
+.details{
+    display:flex;
+    justify-content:space-between;
+    margin:15px 0;
+    color:#777;
+    font-size:14px;
+}
+
+.price{
+    color:#D4AF37;
+    font-size:28px;
+    font-weight:bold;
+    margin-top:15px;
+}
+
+/* الأزرار */
+
+.card-btn{
+    width:100%;
+    margin-top:20px;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:#0A2540;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.card-btn:hover{
+    background:#D4AF37;
+    color:#000;
+}
+.card .card-content a{
+
+    display:block;
+
+    width:100%;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    padding:14px;
+
+    background:#0A2540;
+
+    color:#fff;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    transition:all .3s ease;
+
+}
+
+.card .card-content a:hover{
+
+    background:#D4AF37;
+
+    color:#000;
+
+    box-shadow:0 8px 15px rgba(212,175,55,.4);
+
+}
